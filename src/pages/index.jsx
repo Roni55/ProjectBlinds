@@ -15,7 +15,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import ButtonAppBar from "./ButtonAppBar";
+import LabelBottomNavigation from "./LabelBottomNavigation";
 import withRoot from '../withRoot';
+import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
+import About from "./About";
 
 const styles = (theme) => ({
   appBar: {
@@ -136,6 +139,8 @@ function Index(props) {
           </Grid>
         </div>
       </main>
+      <ScrollableTabsButtonForce />
+      <LabelBottomNavigation />
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
@@ -145,6 +150,8 @@ function Index(props) {
           Something here to give the footer a purpose!
         </Typography>
       </footer>
+      <About />
+      
       {/* End footer */}
     </React.Fragment>
   );
