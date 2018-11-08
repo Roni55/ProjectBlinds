@@ -23,7 +23,7 @@ import { SideMenu, SideMain } from "./SideMenu";
 import ComponentProperty from "./ComponentProperty"
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-
+import {MyMain} from  './Layouts'
 
 
 
@@ -77,7 +77,7 @@ const styles = (theme) => ({
 
 const cards = [1, 2, 3, 4, 5, 6];
 
-function Index(props) {
+function Home(props) {
   const { classes } = props;
 
   return (
@@ -85,15 +85,9 @@ function Index(props) {
       <CssBaseline />
       <ButtonAppBar position="static" className={classes.appBar} />
      
-      
+      <ComponentProperty />
       <main>
-        <ComponentProperty />
-        <SideMain />
-        <BrowserRouter>
-          
-        <Button component={Link} to="/about">
-          Link
-        </Button></BrowserRouter>
+       
         {/* Hero unit */}
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
@@ -154,8 +148,8 @@ function Index(props) {
           </Grid>
         </div>
       </main>
-      <ScrollableTabsButtonForce />
-      <LabelBottomNavigation />
+      
+     
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
@@ -165,14 +159,14 @@ function Index(props) {
           Something here to give the footer a purpose!
         </Typography>
       </footer>
-      <About />
+      
       
       {/* End footer */}
     </React.Fragment>
   );
 }
 
-Index.propTypes = {
+Home.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-export default withRoot(withStyles(styles)(Index));
+export default withRoot(withStyles(styles)(Home));

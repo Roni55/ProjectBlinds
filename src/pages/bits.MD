@@ -6,3 +6,7 @@
           </Typography>
         </Toolbar>
       </AppBar>
+//angolia search
+["text-shadow"] = '1px 1px 5px red';
+       textShadow: 0, 1 , 1, 1, 1,  white,
+       textShadow = "1px 1px 0 red";

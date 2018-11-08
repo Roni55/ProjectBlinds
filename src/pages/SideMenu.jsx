@@ -11,13 +11,22 @@ import About from "./About";
 //   };
 
 
-export const SideMain = () => (
+export  const Navigation  = () => (
     <Switch>
       <Route exact path='/' ></Route>
       <Route exact path='/about' component={About}></Route>
-      <Route exact path='/contact' ></Route>
     </Switch>
 );
+
+export const SideMain = () => (
+    <nav>
+      <ul>
+        <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
+        <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
+        <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
+      </ul>
+    </nav>
+  );
   
 // export const sideRoute = () => (
 //     <Switch>
