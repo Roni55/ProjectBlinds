@@ -14,13 +14,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import ButtonAppBar from "./ButtonAppBar";
 import LabelBottomNavigation from "./LabelBottomNavigation";
 import withRoot from '../withRoot';
 import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
-import About from "./About";
-import { SideMenu, SideMain } from "./SideMenu";
-import ComponentProperty from "./ComponentProperty"
+
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import {MyMain} from  './Layouts'
@@ -28,9 +25,6 @@ import {MyMain} from  './Layouts'
 
 
 const styles = (theme) => ({
-  appBar: {
-    position: 'relative',
-  },
   icon: {
     marginRight: theme.spacing.unit * 2,
   },
@@ -79,15 +73,10 @@ const cards = [1, 2, 3, 4, 5, 6];
 
 function Home(props) {
   const { classes } = props;
-
   return (
     <React.Fragment>
       <CssBaseline />
-      <ButtonAppBar position="static" className={classes.appBar} />
-     
-      <ComponentProperty />
       <main>
-       
         {/* Hero unit */}
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
@@ -148,20 +137,7 @@ function Home(props) {
           </Grid>
         </div>
       </main>
-      
      
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-      </footer>
-      
-      
-      {/* End footer */}
     </React.Fragment>
   );
 }

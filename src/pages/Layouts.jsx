@@ -1,36 +1,45 @@
 import React from 'react'
 import { SideMain } from './SideMenu'
+import PropTypes from 'prop-types'
 import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
+import AppBar from '@material-ui/core/AppBar';
+import ButtonAppBar from "./ButtonAppBar";
+import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
+import withRoot from '../withRoot';
+import MyHeader from './MyHeader'
+import MyFooter from './MyFooter'
 
-export const MyHeader = () => {
-  return (
-    <div>
-      <h1> This Header </h1>
-      <SideMain />
-    </div>
-  )
-}
+const styles = (theme) => ({
+  centralizedContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    webkitBoxAlign: 'center',
+    alignItems: 'center',
+     margin: 20,
+  },
+});
 
-export const MyFooter = () => {
-    return (
-      <div>
-        <h1> This footer </h1>
-      </div>
-    )
-}
+//  const { classes } = props;
+//className={classes.centralizedContainer}
 
 class Layouts extends React.Component {
+  
     render() {
         return (
-            <div>
-                <MyHeader />
+            <div >
+            <MyHeader />
             {this.props.children}
             <div>
               </div>
             <MyFooter />
-            <ScrollableTabsButtonForce />
+            
             </div>
         )
     }
 }
-export default Layouts;
+
+Layouts.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withRoot(withStyles(styles)(Layouts));

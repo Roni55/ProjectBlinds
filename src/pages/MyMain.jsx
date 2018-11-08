@@ -18,10 +18,9 @@ import withRoot from '../withRoot';
 import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
 import About from "./About";
 import { SideMenu, SideMain } from "./SideMenu";
-import ComponentProperty from "./ComponentProperty"
+
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-
 
 
 
@@ -78,13 +77,11 @@ const cards = [1, 2, 3, 4, 5, 6];
 
 function MyMain(props) {
   const { classes } = props;
-
   return (
     <React.Fragment>
       <CssBaseline />
-      <ComponentProperty />
       <main className={classes.centralizedContainer}>
-        {/* Hero unit */}
+              {/* Hero unit */}
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               This Main
@@ -92,8 +89,6 @@ function MyMain(props) {
             <LabelBottomNavigation />
         </div> This End
       </main>
-     
-  
     </React.Fragment>
   );
 }
