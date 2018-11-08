@@ -11,7 +11,7 @@ import withRoot from '../withRoot';
 
 const styles = {
   root: {
-    width: 500,
+    width: '500',
     flexGrow: 1,
   },
 };

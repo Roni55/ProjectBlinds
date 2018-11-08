@@ -5,6 +5,8 @@ import Layouts, { MyHeader, MyFooter } from "./Layouts"
 import   MyMain  from "./MyMain"
 import about from "./About"
 import Home from './Home'
+import NotFound from "./NotFound"
+
 import {createBrowserHistory} from 'history';
 const browserHistory = createBrowserHistory();
 
@@ -15,8 +17,9 @@ class index extends React.Component {
           <Layouts>
             <div>
               <Route path="/" component={Home} />
-              <Route path="/"  component={MyMain} />
+              <Route path="/mymain"  component={MyMain} />
               <Route path="/about" component={about} />
+              <Route  path="/ "   component={NotFound}/>
             </div>
           </Layouts>
         </Router>

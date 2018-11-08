@@ -1,7 +1,7 @@
 import React from 'react'
 import { SideMain } from './SideMenu'
 import PropTypes from 'prop-types'
-
+import MyMain from './MyMain'
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import withRoot from '../withRoot';
@@ -28,7 +28,9 @@ class Layouts extends React.Component {
           <div >
             <MyHeader />          
             <div>
-            {this.props.children} 
+              <div>
+            {this.props.children}
+            </div>
               
           </div>
           <MyFooter />

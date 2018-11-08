@@ -80,7 +80,7 @@ function Home(props) {
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Blinds layouts
+              Home Blinds Page
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
                Bleading Edge SEO collection contents, the creator, etc.
