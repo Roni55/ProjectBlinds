@@ -8,6 +8,7 @@ const styles = {
     width: '100%',
       maxWidth: '500',
       margin: '0 .4em',
+    textAlign: 'center',
   },
 };
 

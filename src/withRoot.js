@@ -6,7 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 // A theme with custom primary and secondary color.
 // It's optional.
-//	#96A1F8 #6970ad #96A1F8 #abb3f9
+//	#96A1F8 #6970ad #96A1F8 #abb3f9 or indigo [A100]
 // light: blue [200],
 // main:  blue [500],
 // dark:  blue [700],  A100
