@@ -23,7 +23,6 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import {MyMain} from  './Layouts'
 
 
-
 const styles = (theme) => ({
   icon: {
     marginRight: theme.spacing.unit * 2,
@@ -84,8 +83,8 @@ function Home(props) {
               Blinds layouts
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
-               Bleading Edge SEO collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+               Bleading Edge SEO collection contents, the creator, etc.
+               but not too short so folks don&apos;t simply skip over it
               entirely.
             </Typography>
             <div className={classes.heroButtons}>

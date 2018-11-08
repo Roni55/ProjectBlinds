@@ -13,9 +13,9 @@ class index extends React.Component {
       return (
         <Router history={browserHistory}>
           <Layouts>
-            <MyMain />
             <div>
-              <Route path="/"  component={Home} />
+              <Route path="/" component={Home} />
+              <Route path="/"  component={MyMain} />
               <Route path="/about" component={about} />
             </div>
           </Layouts>

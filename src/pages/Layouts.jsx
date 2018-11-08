@@ -1,9 +1,7 @@
 import React from 'react'
 import { SideMain } from './SideMenu'
 import PropTypes from 'prop-types'
-import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
-import AppBar from '@material-ui/core/AppBar';
-import ButtonAppBar from "./ButtonAppBar";
+
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import withRoot from '../withRoot';
@@ -21,20 +19,20 @@ const styles = (theme) => ({
 });
 
 //  const { classes } = props;
-//className={classes.centralizedContainer}
+//className={classes.centralizedContainer} {this.props.children}
 
 class Layouts extends React.Component {
   
     render() {
         return (
-            <div >
-            <MyHeader />
-            {this.props.children}
+          <div >
+            <MyHeader />          
             <div>
-              </div>
-            <MyFooter />
-            
-            </div>
+            {this.props.children} 
+              
+          </div>
+          <MyFooter />
+          </div>
         )
     }
 }
