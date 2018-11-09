@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 
 
+
 const styles = {
   fontFamily: "sans-serif",
+  display: "inline",
+  textDecoration:'none',
   textAlign: "center"
 };
 
@@ -19,7 +22,7 @@ export default class Test extends Component {
   }
 
   render() {
-    this.items = ["home", "about", "item3"];
+    this.items = ["home", "about", "dashboard"];
     var lis = [];
     for (var liName in this.items) {
       var liName2 = this.items[liName];

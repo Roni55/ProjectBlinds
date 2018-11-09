@@ -17,13 +17,14 @@ import MenuIcon from '@material-ui/icons/Menu';
 import LabelBottomNavigation from "./LabelBottomNavigation";
 import withRoot from '../withRoot';
 import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
-
+import { SideMain } from './SideMenu'
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import {MyMain} from  './Layouts'
 //import data from './data.json'
 import Menu from './Menu'
-import  Test  from './Test'
+import Test from './Test'
+
 
 
 const styles = (theme) => ({
@@ -79,8 +80,9 @@ function Home(props) {
     <React.Fragment>
       <CssBaseline />
       <main>
-        <Menu />
-        <Test  />
+      <SideMain />
+        {/* <Menu />
+        <Test  /> */}
         {/* Hero unit */}
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>

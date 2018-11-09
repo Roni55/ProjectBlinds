@@ -1,0 +1,11 @@
+[   
+    {"name": "Home","icon": "/assets/images/flags/uk.png", "link": "home", "children":[
+        {"name": "Dashboard", "icon": "./assets/images/flags/France.png", "link": "dashboard"},
+        {"name": "About", "icon": "./assets/images/flags/France.png", "link": "about"}
+
+    ]},
+    {"name": "Target", "icon": "./assets/images/flags/France.png", "link": "target"},
+    {"name": "Hreflang", "icon": " ", "link": "hreflang"},
+    {"name": "Meta", "icon": "#", "link": "meta"},
+    {"name": "Message", "icon": "#", "link": "message"}
+]

@@ -1,13 +1,14 @@
 import React from 'react'
-import { SideMain } from './SideMenu'
+
 import PropTypes from 'prop-types'
+import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
 import AppBar from '@material-ui/core/AppBar';
 import ButtonAppBar from "./ButtonAppBar";
 import { withStyles } from '@material-ui/core/styles';
 import ComponentProperty from "./ComponentProperty"
 import classNames from 'classnames';
 import withRoot from '../withRoot';
-
+import FullWidthTabs from './FullWidthTabs'
 
 
 const styles = (theme) => ({
@@ -19,9 +20,10 @@ export const MyHeader = () => {
   //const { classes } = props; className={classes.appBar} 
   return (
     <div>
-          <ButtonAppBar position="static" />
-          <ComponentProperty />
-          <SideMain />
+      <ScrollableTabsButtonForce />
+      <FullWidthTabs />
+      <ComponentProperty />
+      
     </div>
   )
 }

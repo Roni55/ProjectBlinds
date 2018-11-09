@@ -11,6 +11,9 @@ import About from "./About";
 //       flexGrow: 1,
 //     },
 //   };
+const activeStyle = {
+  color: "green"
+};
 
   const styles = (theme) => ({
     nav: {
@@ -75,17 +78,21 @@ import About from "./About";
 // export  const Navigation  = () => (
 //     <Switch>
 //       <Route exact path='/' component={About}></Route>
-//       <Route exact path='/about' component={About}></Route>
+//       <Route exact activeClassName="current" path='/about' component={About}></Route>
 //     </Switch>
 // );
 
 export const SideMain = () => (
-    <nav style={{ color: 'red' , display : 'inlineBlock', paddingLeft:'5%'}} >
-      <ul style={{ color: 'red' , display : 'inlineBlock', paddingLeft:'5%'}}>
-        <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
-        <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
-        <li><NavLink exact activeClassName="current" to='/mymain'>MyMain</NavLink></li>
-            
+    <nav  >
+      <ul >
+        <li><NavLink exact style={{ color: 'Blue' , display : 'inlineBlock', textDecoration: 'none', paddingLeft:'5%'}} to='/'>Home</NavLink></li>
+        <li><NavLink exact style={{ color: 'Blue' , display : 'inlineBlock', textDecoration: 'none', paddingLeft:'5%'}} to='/about'>About</NavLink></li>
+        <li><NavLink exact style={{ color: 'Blue' , display : 'inlineBlock', textDecoration: 'none', paddingLeft:'5%'}}  to='/mymain'>MyMain</NavLink></li>
+        <li>
+          <NavLink to="/post" activeStyle={activeStyle}>
+            react
+          </NavLink>
+        </li>  
       </ul>
     </nav>
 );

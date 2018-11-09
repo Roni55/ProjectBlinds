@@ -16,10 +16,12 @@ class index extends React.Component {
         <Router history={browserHistory}>
           <Layouts>
             <div>
-              <Route path="/" component={Home} />
-              <Route path="/mymain"  component={MyMain} />
-              <Route path="/about" component={about} />
-              <Route  path="/ "   component={NotFound}/>
+              <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/mymain"  component={MyMain} />
+              <Route  exact path="/about" component={about} />
+              <Route component={NotFound} />
+              </Switch>
             </div>
           </Layouts>
         </Router>

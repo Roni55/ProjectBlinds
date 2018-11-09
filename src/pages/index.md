@@ -13,6 +13,7 @@ import MyAppBar from './AppBar';
 import MenuIcon from '@material-ui/icons/Menu';
 import ButtonAppBar from "./ButtonAppBar";
 
+<ButtonAppBar position="static" />
 const styles = theme => ({
   root: {
     textAlign: 'center',
@@ -75,3 +76,4 @@ Index.propTypes = {
 };
 
 export default withRoot(withStyles(styles)(Index));
+this.props.

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import cheese from '../cheese.svg'
 
 const styles = {
   root: {
@@ -17,6 +18,7 @@ function About(props) {
 
   return (
     <div className={classes.root}>
+      <img src={cheese.svg} width="100" height="50"/>
       <Typography component="h2" variant="h1" gutterBottom>
         Blinds 
       </Typography>
