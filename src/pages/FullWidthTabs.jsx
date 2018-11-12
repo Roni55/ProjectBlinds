@@ -28,7 +28,8 @@ TabContainer.propTypes = {
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 500
+    width: 1200,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
   }
 });
 
@@ -61,6 +62,7 @@ class FullWidthTabs extends React.Component {
             >
               <Tab label="Home" component={Link} to="/home" />
               <Tab label="Compare" component={Link} to="/about" />
+              <Tab label="Compare" component={Link} to="/about" />
             </Tabs>
           </AppBar>
 
@@ -82,7 +84,7 @@ FullWidthTabs.propTypes = {
 function ItemOne(theme) {
   return (
     <Paper>
-      <Home />>
+      <Home />
     </Paper>
   );
 }
@@ -113,3 +115,6 @@ const PageShell = (Page, previous) => {
 };
 
 export default withStyles(styles, { withTheme: true })(FullWidthTabs);
+
+
+

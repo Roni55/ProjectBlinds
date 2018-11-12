@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import cheese from '../cheese.svg'
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import Logo from './logo.svg'
+import abackground  from   './abackround.jpg'
+import '../App.css';
+import SvgComponent from "./SvgComponent"
 
 const styles = {
   root: {
     width: '100%',
-      maxWidth: '500',
-      margin: '0 .4em',
+    maxWidth: '500',
+    margin: '0 .4em',
     textAlign: 'center',
+    
   },
 };
 
@@ -18,25 +23,16 @@ function About(props) {
 
   return (
     <div className={classes.root}>
-      <img src={cheese.svg} width="100" height="50"/>
+      <Fragment>
+ 
       <Typography component="h2" variant="h1" gutterBottom>
         Blinds 
       </Typography>
-      <Typography variant="h2" gutterBottom>
-        h2. Blinds
-      </Typography>
-      <Typography variant="h3" gutterBottom>
-        h3. Blinds
-      </Typography>
-      <Typography variant="h4" gutterBottom>
-        h4. Blinds
-      </Typography>
-      <Typography variant="h5" gutterBottom>
-        h5. Blinds
-      </Typography>
-      <Typography variant="h6" gutterBottom>
-        h6. Blinds
-      </Typography>
+        <img src={abackground} style={{ height: '48px', width: '900px' }} />
+        </Fragment>
+      <img src={"https://s.cdpn.io/3/kiwi.svg"} style={{ height: '28px' }} />
+      <img src={Logo} style={{ height: '28px' }} className="App-logo" /> 
+       
       <Typography variant="subtitle1" gutterBottom>
         subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
       </Typography>

@@ -1,5 +1,5 @@
 import React, { Component, Children } from 'react';
-import data from './data.json';
+import data from '../components/Json/data.json';
 
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";

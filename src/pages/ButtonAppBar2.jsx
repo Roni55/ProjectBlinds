@@ -21,7 +21,7 @@ const styles = theme => ({
   },
 });
 
-class Index extends React.Component {
+class ButtonAppBar2 extends React.Component {
   state = {
     open: false,
   };
@@ -75,5 +75,4 @@ Index.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(Index));
-this.props.
+export default withRoot(withStyles(styles)(ButtonAppBar2));

@@ -21,7 +21,7 @@ import { SideMain } from './SideMenu'
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import {MyMain} from  './Layouts'
-//import data from './data.json'
+//import data from './Json/data.json'
 import Menu from './Menu'
 import Test from './Test'
 
@@ -80,7 +80,8 @@ function Home(props) {
     <React.Fragment>
       <CssBaseline />
       <main>
-      <SideMain />
+        <SideMain />
+        <fnButton />
         {/* <Menu />
         <Test  /> */}
         {/* Hero unit */}
