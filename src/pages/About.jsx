@@ -4,9 +4,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import Logo from './logo.svg'
-import abackground  from   './abackround.jpg'
+import background  from   './backround.jpg'
 import '../App.css';
 import SvgComponent from "./SvgComponent"
+import ReactSVG from 'react-svg'
 
 const styles = {
   root: {
@@ -24,12 +25,31 @@ function About(props) {
   return (
     <div className={classes.root}>
       <Fragment>
- 
       <Typography component="h2" variant="h1" gutterBottom>
         Blinds 
       </Typography>
-        <img src={abackground} style={{ height: '48px', width: '900px' }} />
-        </Fragment>
+        <ReactSVG src="./Logo.svg" />
+        <ReactSVG src="Logo.svg"
+         evalScripts="always"
+         fallback={() => <span>Error!</span>}
+         onInjected={(error, svg) => {
+      if (error) {
+        console.error(error)
+        return
+    }
+    console.log(svg)
+  }}
+  renumerateIRIElements={false}
+  svgClassName="svg-class-name"
+  svgStyle={{ width: 200 }}
+  className="wrapper-class-name"
+  onClick={() => {
+    console.log('wrapper onClick')
+  }}
+/>
+        <div className="nav-image" > Top top  </div>
+        <img src={background} style={{ height: '48px', width: '900px' }} />
+Pick Search     </Fragment>
       <img src={"https://s.cdpn.io/3/kiwi.svg"} style={{ height: '28px' }} />
       <img src={Logo} style={{ height: '28px' }} className="App-logo" /> 
        

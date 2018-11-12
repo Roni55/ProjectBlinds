@@ -12,7 +12,7 @@ import About from "./About";
 //     },
 //   };
 const activeStyle = {
-  color: "green"
+  color: "Blue"
 };
 
   const styles = (theme) => ({

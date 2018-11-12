@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { Link, Route, BrowserRouter, Switch } from "react-router-dom";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Home from "./Home"
-import About from "./About"
+import Contact from "./Contact"
 
 function TabContainer({ children, dir }) {
   return (
@@ -28,7 +28,7 @@ TabContainer.propTypes = {
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 1200,
+    width: 600,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
   }
 });
@@ -92,7 +92,7 @@ function ItemOne(theme) {
 function compare(theme) {
   return (
     <Paper>
-    <About />
+    <Contact />
     </Paper>
   );
 }

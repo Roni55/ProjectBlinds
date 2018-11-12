@@ -7,9 +7,9 @@ class Post extends React.Component {
 
   render() {
     const { location, match, history } = this.props;
-    // location: 현재 페이지 주소 상태
-    // match: 현재 주소 데이터 조회
-    // history: 현재 라우트를 조작할 때 사
+    // location: 
+    // match: 
+    // history:
     return (
       <div>
         <h2>Post</h2>
