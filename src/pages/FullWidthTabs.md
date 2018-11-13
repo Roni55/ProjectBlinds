@@ -81,21 +81,21 @@ FullWidthTabs.propTypes = {
   theme: PropTypes.object.isRequired
 };
 
-function ItemOne(theme) {
-  return (
-    <Paper>
-      <Home />
-    </Paper>
-  );
-}
+// function ItemOne(theme) {
+//   return (
+//     <Paper>
+//       <Home />
+//     </Paper>
+//   );
+// }
 
-function compare(theme) {
-  return (
-    <Paper>
-    <Contact />
-    </Paper>
-  );
-}
+// function compare(theme) {
+//   return (
+//     <Paper>
+//     <Contact />
+//     </Paper>
+//   );
+// }
 
 const PageShell = (Page, previous) => {
   return props => (

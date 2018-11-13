@@ -82,7 +82,7 @@ function MyMain(props) {
               {/* Hero unit */}
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              This Main
+              This Main a Main
             </Typography>
             <LabelBottomNavigation />
         </div> This End

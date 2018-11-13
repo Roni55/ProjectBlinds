@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Switch, Route, Router } from 'react-router-dom';
 import Layouts, { MyHeader, MyFooter } from "./Layouts"
-import   MyMain  from "./MyMain"
+import  Contact  from "./Contact"
 import about from "./About"
 import Home from './Home'
+import MyMain from "./MyMain"
 import NotFound from "./NotFound"
 
 
@@ -19,9 +20,10 @@ class index extends React.Component {
             <div>
               <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/mymain"  component={MyMain} />
-              <Route  exact path="/about" component={about} />
-              <Route component={NotFound} />
+              <Route exact path="/contact"  component={Contact} />
+                <Route exact path="/about" component={about} />
+                <Route  exact path="/about" component={about} />
+                <Route component={NotFound} />
               </Switch>
             </div>
           </Layouts>

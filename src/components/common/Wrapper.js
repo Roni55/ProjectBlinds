@@ -4,7 +4,7 @@
 //   position: relative;
 // `;
 import React from 'react'
-const Wrapper = {
+export default const Wrapper = {
     wrap: { position: relative, margin: 10, }
   };
    //style={Warpper.wrap}

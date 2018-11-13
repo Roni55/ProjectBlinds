@@ -63,7 +63,7 @@ ListItemLink2.propTypes = {
   to: PropTypes.string.isRequired,
 };
 
-function ComponentProperty(props) {
+function MatSide(props) {
   const { classes } = props;
 
   // Use NoSsr to avoid SEO issues with the documentation website.
@@ -93,8 +93,8 @@ function ComponentProperty(props) {
   );
 }
 
-ComponentProperty.propTypes = {
+MatSide.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ComponentProperty);
+export default withStyles(styles)(MatSide);

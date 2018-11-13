@@ -65,12 +65,6 @@ const styles = theme => ({
               data.map((menu) => {
                 return <li key={menu.id}>{menu.name} - {menu.icon} >
               <a href={menu.link} onClick={() => this.handleClick}> Click</a>
-                  {/* <ul>
-                    {menu.children.map((e) => {
-                      return <a href={e.link}>link</a>
-                    })}
-
-                  </ul> */}
                 </li>
 
               })

@@ -3,14 +3,6 @@ import PropTypes from 'prop-types'
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
-// function Papers({ styles })  => {
-//     return (
-//         <Paper style={styles.Paper}>
-//             Left Pane
-//       </Paper>
-//     );
-// }
-
 
  const Papers = ({styles }) => {
   return (

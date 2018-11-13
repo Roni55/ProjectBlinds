@@ -21,6 +21,7 @@
       transform: skew(21deg);
     } /* Un-skew the text
   //} */
+
   .each {
     position: absolute;
     top: 50%;
@@ -55,3 +56,17 @@
   .button-fixedwidth {
     width: 100px;
   }
+
+  .btn {
+    background: #0079c1;
+    color: #0079c1;
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+}
+.btn-text {
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+    padding: 20px;
+}

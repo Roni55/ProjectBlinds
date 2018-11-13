@@ -17,7 +17,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import LabelBottomNavigation from "./LabelBottomNavigation";
 import withRoot from '../withRoot';
 import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
-import { SideMain } from './SideMenu'
+
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import {MyMain} from  './Layouts'
@@ -80,15 +80,15 @@ function Home(props) {
     <React.Fragment>
       <CssBaseline />
       <main>
-        <SideMain />
-        <fnButton />
+       
+        
         {/* <Menu />
         <Test  /> */}
         {/* Hero unit */}
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Home Blinds Page
+              Home Blinds 
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
                Bleading Edge SEO collection contents, the creator, etc.

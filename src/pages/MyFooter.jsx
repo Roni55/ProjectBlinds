@@ -17,25 +17,13 @@ footer: {
 
 //  const { classes } = props;
 //className={classes.footer}   className={classes.footer}
-export const MyFooter = () => {
-   
+export const MyFooter = () => { 
     return (
       <div >
-         {/* Footer */}
-      <footer >
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-      </footer>      
-      {/* End footer */}
         <ScrollableTabsButtonForce />
       </div>
     )
 }
-
 
 MyFooter.propTypes = {
   classes: PropTypes.object.isRequired,

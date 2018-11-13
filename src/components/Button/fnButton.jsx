@@ -1,9 +1,10 @@
 import React from 'react'
+import classNames from 'classnames';
 // import { withStyles } from '@material-ui/core/styles';
 // import withRoot from '../withRoot';
 import Button from '@material-ui/core/Button';
 //install node-sass
-import "./buttonSkewed.css";
+import buttonSkewed from "./buttonSkewed.css";
 
 
 //   <div>    
@@ -12,8 +13,8 @@ import "./buttonSkewed.css";
 
 export default function fnButton() {
   return (
-    <div className='each '>
-      <Button className='button-slanted ' >
+    <div className='btn'>
+      <Button className='button-text' >
         OK
       </Button>
     </div>
