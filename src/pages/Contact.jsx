@@ -9,6 +9,18 @@ import Icon from "./Icon"
 // import LockIcon from "../components/Button/LockIcon";
 import Button from "../components/Button/Button";
 import FnButton from "../components/Button/FnButton";
+import LinkButton from '../components/Button/LinkButton';
+import { withRouter } from 'react-router';
+import WrapLink from "../components/Button/WrapLink";
+
+
+// If you need an onClick method:
+// <LinkButton
+//   to='/path/to/page'
+//   onClick={(event) => {
+//     console.log('custom event here!', event)
+//   }}
+// >Push My Buttons!</LinkButton><FnButton />
 
 const Contact = () => {
   return (
@@ -17,10 +29,11 @@ const Contact = () => {
       
       <ResponsiveDrawer />
      
-      <FnButton />
+      <LinkButton to='/home'>Push My Buttons!</LinkButton>
       <Icon />
       <Button />
-      <FnButton />
+      <WrapLink />
+     
 
       <footer >
         <Typography variant="h6" align="center" gutterBottom>

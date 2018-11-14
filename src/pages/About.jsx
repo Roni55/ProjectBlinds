@@ -14,6 +14,10 @@ import RightSide from '../components/Layout/RightSide'
 import FnButton from '../components/Button/FnButton'
 import SlantButton from '../components/Button/SlantButton'
 import '../components/Button/buttonSkewed.css'
+import { withRouter } from 'react-router'
+import LinkButton from '../components/Button/LinkButton';
+
+
 const styles = {
   root: {
     width: '100%',
@@ -59,6 +63,7 @@ function About(props) {
       <img src={'https://s.cdpn.io/3/kiwi.svg'} style={{ height: '28px' }} />
       <img src={Logo} style={{ height: '28px' }} className='App-logo' />
       <Sides />
+      <LinkButton to='/home'>Push My Buttons!</LinkButton>
       <RightSide />
       <div>
         <FnButton className='button-slanted'> Button </FnButton>
