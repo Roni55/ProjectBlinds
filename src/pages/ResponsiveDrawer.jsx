@@ -15,7 +15,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
+// import createMuiTheme from 'material-ui/styles/createMuiTheme'
+// className={classes.appBar}  className="primaryLight"
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -30,7 +31,10 @@ const styles = theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-  }, 
+  },
+  primaryLight: {
+    backgroundColor: theme.palette.primary.light
+  },
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
@@ -70,7 +74,7 @@ class ResponsiveDrawer extends React.Component {
         
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="absolute" className={classes.appBar}>
+        <AppBar position="absolute" className={classes.appBar} >
           <Toolbar>
             <IconButton
               color="inherit"

@@ -9,6 +9,7 @@ import Icon from "./Icon"
 // import LockIcon from "../components/Button/LockIcon";
 import Button from "../components/Button/Button";
 import FnButton from "../components/Button/FnButton";
+
 const Contact = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const Contact = () => {
       
       <ResponsiveDrawer />
      
-      
+      <FnButton />
       <Icon />
       <Button />
       <FnButton />

@@ -11,7 +11,7 @@ import SvgComponent from './SvgComponent'
 import ReactSVG from 'react-svg'
 import Sides from '../components/Layout/Sides'
 import RightSide from '../components/Layout/RightSide'
-import fnButton from '../components/Button/fnButton'
+import FnButton from '../components/Button/FnButton'
 import SlantButton from '../components/Button/SlantButton'
 import '../components/Button/buttonSkewed.css'
 const styles = {
@@ -61,7 +61,7 @@ function About(props) {
       <Sides />
       <RightSide />
       <div>
-        <fnButton className='button-slanted'> Button </fnButton>
+        <FnButton className='button-slanted'> Button </FnButton>
         <SlantButton />
       </div>
       <Typography variant='subtitle1' gutterBottom>

@@ -18,8 +18,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: indigo [200],
-      main:  '#8C9EFF' ,
+      light: '#8C9EFF',
+      main:   indigo [200],
       dark: deepPurple[500],
       contrastText: '#fff',
     },
