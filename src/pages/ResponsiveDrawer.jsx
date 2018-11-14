@@ -17,6 +17,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // import createMuiTheme from 'material-ui/styles/createMuiTheme'
 // className={classes.appBar}  className="primaryLight"
+import WrapLink from "../components/Button/WrapLink";
+import { withRouter } from 'react-router';
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -87,6 +90,7 @@ class ResponsiveDrawer extends React.Component {
             <Typography variant="h6" color="inherit" noWrap>
               Blinds
             </Typography>
+            <WrapLink />
           </Toolbar>
         </AppBar>
         <nav className={classes.drawer}>
