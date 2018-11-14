@@ -11,11 +11,12 @@ import buttonSkewed from "./buttonSkewed.css";
 //   <button onClick={() => alert("hello world")}>Hello Application</button>
 // </div> /*}
 
-export default function fnButton() {
+export default function FnButton() {
+
   return (
     <div className='btn'>
       <Button className='button-text' >
-        OK
+        Blinds
       </Button>
     </div>
   )

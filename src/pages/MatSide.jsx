@@ -13,12 +13,14 @@ import Typography from '@material-ui/core/Typography';
 import MemoryRouter from 'react-router/MemoryRouter';
 import Route from 'react-router/Route';
 import { Link } from 'react-router-dom';
+// import createMuiTheme from 'material-ui/styles/createMuiTheme'
+import { MuiThemeProvider} from '@material-ui/core/styles';
 
 const styles = theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    width: 360,
+    width: 460,
   },
   lists: {
     backgroundColor: theme.palette.background.paper,
@@ -34,7 +36,7 @@ class ListItemLink1 extends React.Component {
       <li>
         <ListItem button component={this.renderLink}>
           <ListItemIcon>{icon}</ListItemIcon>
-          <ListItemText primary={primary} />
+          <ListItemText primary={primary.dark} />
         </ListItem>
       </li>
     );
@@ -64,11 +66,12 @@ ListItemLink2.propTypes = {
 };
 
 function MatSide(props) {
-  const { classes } = props;
+  const { classes, theme } = props;
 
   // Use NoSsr to avoid SEO issues with the documentation website.
   return (
     <NoSsr>
+        <MuiThemeProvider theme={theme}>
       <MemoryRouter initialEntries={['/drafts']} initialIndex={0}>
         <div className={classes.root}>
           <Route>
@@ -88,7 +91,8 @@ function MatSide(props) {
             </List>
           </div>
         </div>
-      </MemoryRouter>
+    </MemoryRouter>
+     </MuiThemeProvider>
     </NoSsr>
   );
 }
