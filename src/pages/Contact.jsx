@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 // import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";   <ScrollableTabsButtonForce />
 // import { SideMain } from './SideMenu'
 import  FullWidthTabs from './FullWidthTabs'
-// import MatSide from "./MatSide"  <MatSide />
+import MatSide from "./MatSide"  
 import ResponsiveDrawer from "./ResponsiveDrawer";
 // import SimpleListMenu from "./SimpleListMenu ";
 import Icon from "./Icon"
@@ -32,6 +32,7 @@ const Contact = () => {
       <FullWidthTabs />
       <LinkButton to='/about'>Push </LinkButton>
       <WrapLink />
+      <MatSide />
       
       
       

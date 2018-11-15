@@ -60,9 +60,8 @@ class FullWidthTabs extends React.Component {
               textColor="primary"
               fullWidth
             >
-              <Tab label="Home" component={Link} to="/home" />
-              <Tab label="Compare" component={Link} to="/about" />
-              <Tab label="Compare" component={Link} to="/about" />
+              <Tab label="Home" component={Link} to="/"  />
+              <Tab label="About" component={Link} to="/about"  />
             </Tabs>
           </AppBar>
 
