@@ -10,7 +10,6 @@ import buttonSkewed from "./buttonSkewed.css";
 //   <button onClick={() => alert("hello world")}>Hello Application</button>
 // </div> /*}
 
-
 {/* <div className="each">
 <a href="#" className="btn">
 <span>What a button!</span>
@@ -23,6 +22,7 @@ const styles = theme => ({
   root: {
     width: '100%',
     maxWidth: 360,
+    height: 50,
     backgroundColor: theme.palette.primary.main,
     borderColor: theme.palette.primary.light,
     boxShadow: '0 3px 5px 2px rgb(140,158,255) ',
@@ -33,12 +33,12 @@ const styles = theme => ({
 class FnButton extends Component {
  
   render() {
-    const { classes, theme} = this.props;
+    const { classes, theme, label} = this.props;
     return (
       <div className="each">
       <div className='btn' >
-      <Button className='button-text, button-fixedwidth'  className={classes.root} >
-        Blinds
+      <Button  className='button-text, button-fixedwidth' className={classes.root}  style={{ width: 90, height: 60, display: 'inline-block', padding:18}} >
+        {label}
       </Button>
       </div>
       </div>

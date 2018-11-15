@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm'
 import Logo from './logo.svg'
 import background from './backround.jpg'
 import '../App.css'
@@ -66,7 +65,6 @@ function About(props) {
       <LinkButton to='/home'>Push My Buttons!</LinkButton>
       <RightSide />
       <div>
-        <FnButton className='button-slanted'> Button </FnButton>
         <SlantButton />
       </div>
       <Typography variant='subtitle1' gutterBottom>

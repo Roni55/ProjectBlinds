@@ -2,6 +2,7 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography';
 // import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";   <ScrollableTabsButtonForce />
 // import { SideMain } from './SideMenu'
+import  FullWidthTabs from './FullWidthTabs'
 // import MatSide from "./MatSide"  <MatSide />
 import ResponsiveDrawer from "./ResponsiveDrawer";
 // import SimpleListMenu from "./SimpleListMenu ";
@@ -11,8 +12,9 @@ import Button from "../components/Button/Button";
 import FnButton from "../components/Button/FnButton";
 import LinkButton from '../components/Button/LinkButton';
 import { withRouter } from 'react-router';
-import WrapLink from "../components/Button/WrapLink";
-
+// import MyIcon from "../components/Layout/MyIcon";
+import WrapLink from "../components/Button/WrapLink2";
+import SvgIcon from '@material-ui/core/SvgIcon';
 
 // If you need an onClick method:
 // <LinkButton
@@ -26,14 +28,14 @@ const Contact = () => {
   return (
     <div>
       <h1>Contact </h1>
-      
       <ResponsiveDrawer />
-     
-      <LinkButton to='/home'>Push My Buttons!</LinkButton>
-      <Icon />
-      <Button />
+      <FullWidthTabs />
+      <LinkButton to='/about'>Push </LinkButton>
       <WrapLink />
-     
+      
+      
+      
+      
 
       <footer >
         <Typography variant="h6" align="center" gutterBottom>

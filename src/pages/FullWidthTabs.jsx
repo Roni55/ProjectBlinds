@@ -66,10 +66,10 @@ class FullWidthTabs extends React.Component {
             </Tabs>
           </AppBar>
 
-          <Switch>
+          {/* <Switch>
             <Route path="/home" component={PageShell(ItemOne)} />
             <Route path="/about" component={PageShell(compare)} />
-          </Switch>
+          </Switch> */}
         </div>
       </BrowserRouter>
     );
@@ -97,22 +97,22 @@ FullWidthTabs.propTypes = {
 //   );
 // }
 
-const PageShell = (Page, previous) => {
-  return props => (
-    <div className="page">
-      <ReactCSSTransitionGroup
-        transitionAppear={true}
-        transitionAppearTimeout={600}
-        transitionEnterTimeout={600}
-        transitionLeaveTimeout={600}
-        transitionName={props.match.path === "/home" ? "SlideIn" : "SlideOut"}
-      >
-        {console.log(props)}
-        <Page {...props} />
-      </ReactCSSTransitionGroup>
-    </div>
-  );
-};
+//  const PageShell = (Page, previous) => {
+//   return props => (
+//     <div className="page">
+//       <ReactCSSTransitionGroup
+//         transitionAppear={true}
+//         transitionAppearTimeout={600}
+//         transitionEnterTimeout={600}
+//         transitionLeaveTimeout={600}
+//         transitionName={props.match.path === "/home" ? "SlideIn" : "SlideOut"}
+//       >
+//         {console.log(props)}
+//         <Page {...props} />
+//       </ReactCSSTransitionGroup>
+//     </div>
+//   );
+// }; 
 
 export default withStyles(styles, { withTheme: true })(FullWidthTabs);
 

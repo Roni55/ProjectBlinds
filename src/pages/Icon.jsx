@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import red from '@material-ui/core/colors/red';
+import deepPurple from '@material-ui/core/colors/deepPurple';
+
 import Icon from '@material-ui/core/Icon';
 
 const styles = theme => ({
@@ -16,7 +17,7 @@ const styles = theme => ({
   iconHover: {
     margin: theme.spacing.unit * 2,
     '&:hover': {
-      color: red[800],
+      color: deepPurple[500],
     },
   },
 });
@@ -26,16 +27,10 @@ function Icons(props) {
 
   return (
     <div className={classes.root}>
-      <Icon className={classes.icon} color="secondary">
+      <Icon className={classes.icon} className={classes.iconHover} color="primary" style={{ fontSize: 35 }}>
         add_circle
       </Icon>
-      <Icon className={classes.icon} color="primary.dark">
-        add_circle
-      </Icon>
-      <Icon className={classes.iconHover} color="error" style={{ fontSize: 30 }}>
-        add_circle
-      </Icon>
-          <Icon className={classes.icon} color={"secondary"} fontSize="large">
+          <Icon className={classes.icon} className={classes.iconHover} color={"secondary"} fontSize="large">
         add_circle
       </Icon>
     </div>

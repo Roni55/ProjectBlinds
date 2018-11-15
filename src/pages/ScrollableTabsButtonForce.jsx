@@ -4,14 +4,16 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
+import Dashboard from '@material-ui/icons/Dashboard';
+import DateRange from '@material-ui/icons/DateRange';
+import Label from '@material-ui/icons/Label';
 import HelpIcon from '@material-ui/icons/Help';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
+// import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import DeleteIcon from '@material-ui/icons/Delete';
+import ExploreOff from '@material-ui/icons/ExploreOff';
+import Explore from '@material-ui/icons/Explore';
 import Typography from '@material-ui/core/Typography';
+// import SvgMaterialIcons from  "../components/Button/SvgMaterialIcons";
 import withRoot from '../withRoot';
 
 function TabContainer(props) {
@@ -58,13 +60,13 @@ class ScrollableTabsButtonForce extends React.Component {
             indicatorColor="primary"
             textColor="primary"
           >
-            <Tab label="Item One" icon={<PhoneIcon />} />
-            <Tab label="Item Two" icon={<FavoriteIcon />} />
-            <Tab label="Item Three" icon={<PersonPinIcon />} />
-            <Tab label="Item Four" icon={<HelpIcon />} />
-            <Tab label="Item Five" icon={<ShoppingBasket />} />
-            <Tab label="Item Six" icon={<ThumbDown />} />
-            <Tab label="Item Seven" icon={<ThumbUp />} />
+            <Tab label="Dashboard" icon={<Dashboard />} />
+            <Tab label="DateRange" icon={<DateRange />} />
+            <Tab label="Docs" icon={<Label />} />
+            <Tab label="Help" icon={<HelpIcon />} />
+            <Tab label="Delete" icon={<DeleteIcon />} />
+            <Tab label="Explore Off" icon={<ExploreOff />} />
+            <Tab label="Explore" icon={<Explore />} />
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer>Item One</TabContainer>}
@@ -72,8 +74,8 @@ class ScrollableTabsButtonForce extends React.Component {
         {value === 2 && <TabContainer>Item Three</TabContainer>}
         {value === 3 && <TabContainer>Item Four</TabContainer>}
         {value === 4 && <TabContainer>Item Five</TabContainer>}
-        {value === 5 && <TabContainer>Item Six</TabContainer>}
-        {value === 6 && <TabContainer>Item Seven</TabContainer>}
+        {value === 5 && <TabContainer>Explore stop</TabContainer>}
+        {value === 6 && <TabContainer>Explore</TabContainer>}
       </div>
     );
   }

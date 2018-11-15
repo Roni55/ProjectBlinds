@@ -90,7 +90,8 @@ class ResponsiveDrawer extends React.Component {
             <Typography variant="h6" color="inherit" noWrap>
               Blinds
             </Typography>
-            <WrapLink />
+              <WrapLink />
+              
           </Toolbar>
         </AppBar>
         <nav className={classes.drawer}>
