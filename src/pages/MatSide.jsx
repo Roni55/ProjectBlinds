@@ -14,13 +14,14 @@ import MemoryRouter from 'react-router/MemoryRouter';
 import Route from 'react-router/Route';
 import { Link } from 'react-router-dom';
 // import createMuiTheme from 'material-ui/styles/createMuiTheme'
-import { MuiThemeProvider} from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';  
 
 const styles = theme => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    width: 460,
+    width: 400,
   },
   lists: {
     backgroundColor: theme.palette.background.paper,
@@ -71,7 +72,8 @@ function MatSide(props) {
   // Use NoSsr to avoid SEO issues with the documentation website.
   return (
     <NoSsr>
-        <MuiThemeProvider theme={theme}>
+      <MuiThemeProvider theme={theme}>
+      <CssBaseline />
       <MemoryRouter initialEntries={['/drafts']} initialIndex={0}>
         <div className={classes.root}>
           <Route>
@@ -81,7 +83,7 @@ function MatSide(props) {
           </Route>
           <div className={classes.lists}>
             <List component="nav">
-              <ListItemLink1 to="/inbox" primary="Inbox" icon={<InboxIcon />} />
+              <ListItemLink1 to="/about" primary="Inbox" icon={<InboxIcon />} />
               <ListItemLink1 to="/drafts" primary="Drafts" icon={<DraftsIcon />} />
             </List>
             <Divider />

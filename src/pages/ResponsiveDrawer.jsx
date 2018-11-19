@@ -21,6 +21,7 @@ import WrapLink from "../components/Button/WrapLink";
 import WrapLinks from "../components/Button/WrapLinks";
 import Button from '@material-ui/core/Button';
 import { withRouter } from 'react-router';
+import MatSide from './MatSide'
 
 const drawerWidth = 240;
 
@@ -75,7 +76,7 @@ class ResponsiveDrawer extends React.Component {
       <div>
         <div className={classes.toolbar} />
         <Divider />
-
+        <MatSide/>
         <Divider />
 
       </div>

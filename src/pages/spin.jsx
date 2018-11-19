@@ -7,7 +7,7 @@ export default class spin extends Component {
         loading: true
     };
     componentDidUpdate() {
-        setTimeout(()=> this.setState({loading:false}),8500);
+        setTimeout(()=> this.setState({loading:false}),2500);
     }
     render() {
         const { loading } = this.state;
