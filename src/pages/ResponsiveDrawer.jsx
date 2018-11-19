@@ -99,12 +99,12 @@ class ResponsiveDrawer extends React.Component {
             <Typography variant="h6" color="inherit" className={classes.grow}>
               Blinds
             </Typography>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-            
-            
+            <Typography variant="h6" color="inherit" className={classes.grow}>     
+              <WrapLink className={classes.grow}/>
+          </Typography>
+            <Typography variant="h6" color="inherit" className={classes.grow}>     
               <WrapLinks className={classes.grow}/>
           </Typography>
-             
               <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
