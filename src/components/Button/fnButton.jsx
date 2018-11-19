@@ -38,7 +38,7 @@ class FnButton extends Component {
     return (
       <div className="each">
       <div className='btn' >
-      <Button  className='button-text, button-fixedwidth' className={classes.root}  style={{ width: '100%', height: 70, verticalAalign: 'middle', display: 'inline-block', padding:10, marginLeft:5, justifyContent: 'space-around'}} >
+      <Button  className='button-text, button-fixedwidth' className={classes.root}  style={{ width: '100%', height: 70,    position: 'relative', verticalAalign: 'middle', display: 'inline-block', padding:10, marginLeft:5, justifyContent: 'space-around'}} >
         {label}
       </Button>
       </div>

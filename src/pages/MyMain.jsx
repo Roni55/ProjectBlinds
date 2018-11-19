@@ -17,7 +17,10 @@ import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
 import About from "./About";
 import { SideMenu, SideMain } from "./SideMenu";
 import WrapLinks from "../components/Button/WrapLinks";
+import WrapLink from "../components/Button/WrapLink";
+import  FullWidthTabs from './FullWidthTabs' 
 import { Link } from 'react-router-dom'
+import MatSide from './MatSide'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 
@@ -79,14 +82,15 @@ function MyMain(props) {
     <React.Fragment>
       <CssBaseline />
       <main className={classes.centralizedContainer}>
+      <FullWidthTabs />
               {/* Hero unit */}
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               This Main  MyMain
             </Typography>
-          <WrapLinks />
+            <MatSide />
           <LabelBottomNavigation />
-          <WrapLinks />
+        
         </div> 
       </main>
     </React.Fragment>
