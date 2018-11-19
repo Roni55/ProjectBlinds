@@ -9,7 +9,7 @@ import ResponsiveDrawer from "./ResponsiveDrawer";
 import Icon from "./Icon"
 // import LockIcon from "../components/Button/LockIcon";
 import Button from "../components/Button/Button";
-import FnButton from "../components/Button/FnButton";
+// import FnButton from "../components/Button/FnButton";
 import LinkButton from '../components/Button/LinkButton';
 import { withRouter } from 'react-router';
 // import MyIcon from "../components/Layout/MyIcon";
@@ -30,10 +30,7 @@ const Contact = () => {
     <div>
       <h1>Contact </h1>
       <ResponsiveDrawer />
-     
-    
-      
-     
+         
       <footer >
         <Typography variant="h6" align="center" gutterBottom>
           Footer
