@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from 'react' 
 import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
@@ -10,7 +10,6 @@ import SvgComponent from './SvgComponent'
 import ReactSVG from 'react-svg'
 import Sides from '../components/Layout/Sides'
 import RightSide from '../components/Layout/RightSide'
-import FnButton from '../components/Button/FnButton'
 import SlantButton from '../components/Button/SlantButton'
 import '../components/Button/buttonSkewed.css'
 import { withRouter } from 'react-router'
@@ -63,9 +62,9 @@ function About(props) {
       <img src={Logo} style={{ height: '28px' }} className='App-logo' />
       <Sides />
       <LinkButton to='/home'>Push My Buttons!</LinkButton>
-      <RightSide />
+      <RightSide /> 
       <div>
-        <SlantButton />
+       
       </div>
       <Typography variant='subtitle1' gutterBottom>
         subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur

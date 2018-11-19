@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
-//import spinnner
+import CircularIndeterminate from './CircularIndeterminate'
+
 export default class spin extends Component {
     
     state = {
         loading: true
     };
     componentDidUpdate() {
-        setTimeout(()=> this.setState({loading:false}),1500);
+        setTimeout(()=> this.setState({loading:false}),8500);
     }
     render() {
         const { loading } = this.state;
         if (loading) {
             return (
                 <div>
-
+                <CircularIndeterminate/>
                 </div>
             )
         }

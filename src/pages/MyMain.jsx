@@ -16,7 +16,7 @@ import withRoot from '../withRoot';
 import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";
 import About from "./About";
 import { SideMenu, SideMain } from "./SideMenu";
-
+import WrapLinks from "../components/Button/WrapLinks";
 import { Link } from 'react-router-dom'
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
@@ -82,10 +82,12 @@ function MyMain(props) {
               {/* Hero unit */}
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              This Main a Main
+              This Main  MyMain
             </Typography>
-            <LabelBottomNavigation />
-        </div> This End
+          <WrapLinks />
+          <LabelBottomNavigation />
+          <WrapLinks />
+        </div> 
       </main>
     </React.Fragment>
   );

@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 // import ScrollableTabsButtonForce from "./ScrollableTabsButtonForce";   <ScrollableTabsButtonForce />
 // import { SideMain } from './SideMenu'
 import  FullWidthTabs from './FullWidthTabs'
-import MatSide from "./MatSide"  
+// import MatSide from "./MatSide"   <MatSide />
 import ResponsiveDrawer from "./ResponsiveDrawer";
 // import SimpleListMenu from "./SimpleListMenu ";
 import Icon from "./Icon"
@@ -13,7 +13,8 @@ import FnButton from "../components/Button/FnButton";
 import LinkButton from '../components/Button/LinkButton';
 import { withRouter } from 'react-router';
 // import MyIcon from "../components/Layout/MyIcon";
-import WrapLink from "../components/Button/WrapLink2";
+import WrapLink from "../components/Button/WrapLink";
+
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 // If you need an onClick method:
@@ -21,7 +22,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 //   to='/path/to/page'
 //   onClick={(event) => {
 //     console.log('custom event here!', event)
-//   }}
+//   }}   <LinkButton to='/about'>Push </LinkButton>  works
 // >Push My Buttons!</LinkButton><FnButton />
 
 const Contact = () => {
@@ -30,14 +31,9 @@ const Contact = () => {
       <h1>Contact </h1>
       <ResponsiveDrawer />
       <FullWidthTabs />
-      <LinkButton to='/about'>Push </LinkButton>
-      <WrapLink />
-      <MatSide />
+    
       
-      
-      
-      
-
+     
       <footer >
         <Typography variant="h6" align="center" gutterBottom>
           Footer

@@ -18,6 +18,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 // import createMuiTheme from 'material-ui/styles/createMuiTheme'
 // className={classes.appBar}  className="primaryLight"
 import WrapLink from "../components/Button/WrapLink";
+import WrapLinks from "../components/Button/WrapLinks";
+import Button from '@material-ui/core/Button';
 import { withRouter } from 'react-router';
 
 const drawerWidth = 240;
@@ -26,11 +28,18 @@ const styles = theme => ({
   root: {
     display: 'flex',
   },
+  root: {
+    flexGrow: 1,
+  },
+  grow: {
+    flexGrow: 1,
+  },
   drawer: {
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
     },
+    
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -87,11 +96,16 @@ class ResponsiveDrawer extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" color="inherit" noWrap>
+            <Typography variant="h6" color="inherit" className={classes.grow}>
               Blinds
             </Typography>
-              <WrapLink />
-              
+            <Typography variant="h6" color="inherit" className={classes.grow}>
+            
+            
+              <WrapLinks className={classes.grow}/>
+          </Typography>
+             
+              <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
         <nav className={classes.drawer}>

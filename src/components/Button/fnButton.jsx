@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 //install node-sass
 import buttonSkewed from "./buttonSkewed.css";
+import LinkTitle from "./LinkTitle"
 
 //   <div>    
 //   <button onClick={() => alert("hello world")}>Hello Application</button>
@@ -16,7 +17,7 @@ import buttonSkewed from "./buttonSkewed.css";
 </a>  rgb(159,168,218)   main color 
 </div> */}
 
-//export default withRoot(withStyles(styles)(FnButton));
+
 
 const styles = theme => ({
   root: {
@@ -37,7 +38,7 @@ class FnButton extends Component {
     return (
       <div className="each">
       <div className='btn' >
-      <Button  className='button-text, button-fixedwidth' className={classes.root}  style={{ width: 90, height: 60, display: 'inline-block', padding:18}} >
+      <Button  className='button-text, button-fixedwidth' className={classes.root}  style={{ width: 90, height: 60, display: 'inline-block', padding:10}} >
         {label}
       </Button>
       </div>
