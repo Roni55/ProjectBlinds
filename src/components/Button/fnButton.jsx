@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 //install node-sass
 import buttonSkewed from "./buttonSkewed.css";
-import LinkTitle from "./LinkTitle"
+//import LinkTitle from "./LinkTitle"
 
 //   <div>    
 //   <button onClick={() => alert("hello world")}>Hello Application</button>

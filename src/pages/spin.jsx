@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CircularIndeterminate from './CircularIndeterminate'
 
-export default class spin extends Component {
+export default class Spin extends Component {
     
     state = {
         loading: true
