@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const WrapLink = props => {
   return (
-    <Link to="/"  style={{ width: '100%', height: 70, display: 'inline-block', verticalAalign: 'middle', display: 'inline-block', padding:10, marginLeft:5, justifyContent: 'space-around',postion:'relative' ,}}>
+    <Link to="/"  style={{ width: 90, height: 68, display: 'inline-block', verticalAalign: 'middle', display: 'inline-block', padding:9, marginLeft:9, justifyContent: 'space-around',postion:'relative' ,}}>
       <FnButton label="Blinds"  />
     </Link>
     

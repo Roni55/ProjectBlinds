@@ -41,7 +41,7 @@ const WrapLinks = props => {
   return (
     <List >
     {menus.map(({ id, link }) => (
-        <ListItem key={id}  style={{ width: 90, height: 60, display: 'inline-block', padding:12}}>
+        <ListItem key={id}  style={{ width: 92, height: 60, display: 'inline-block', padding:12}}>
           <ListItemText primary={link} />       
           <Link to= {`/${link}` }  >
             <FnButton label={link} />
